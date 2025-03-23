@@ -56,3 +56,4 @@ while True:
             
         elif escolha == 5:
             break
+            print("")
