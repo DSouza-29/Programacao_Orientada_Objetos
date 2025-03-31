@@ -1,0 +1,32 @@
+1) Cite, pelo menos, quatro pontos positivos no desenvolvimento de aplicações com a adoção do paradigma orientado à objeto.
+
+        Reutilização de Código
+        Facilidade de Manutenção e Expansão
+        Facilidade na Modelagem de Sistemas Complexos
+        Melhor organização e clareza do código
+
+2) Pense em três problemas da vida real que pode-se modular com orientação a objetos e explique o que corresponde a classe, objeto, métodos e parâmetros.
+
+        Sistema de Gestão de Alunos em uma Escola
+        Um sistema para armazenar informações sobre os alunos de uma escola.
+        Classe: Aluno.
+        Objeto: aluno1 = Aluno("Ana", 16, "9º Ano"), aluno2 = Aluno("Carlos", 17, "3º Ano").
+        Métodos: fazer_matricula(), calcular_media(), verificar_aprovacao().
+        Parâmetros: nome, idade, serie, notas.
+
+
+        Aplicativo de Pedidos de Comida
+        Um sistema para gerenciar pedidos em um restaurante.
+        Classe: Pedido.
+        Objeto: pedido1 = Pedido("João", ["Pizza", "Refrigerante"], 50.00), pedido2 = Pedido("Maria", ["Hambúrguer", "Suco"], 30.00).
+        Métodos: adicionar_item(), calcular_total(), confirmar_pedido().
+        Parâmetros: cliente, itens, preco_total.
+
+
+
+        Sistema de Gestão de Consultas Médicas
+        Um sistema para agendar e gerenciar consultas médicas.
+        Classe: Consulta.
+        Objeto: consulta1 = Consulta("Carlos", "Dr. Ana", "10/04/2025", "14:00"), consulta2 = Consulta("Mariana", "Dr. Pedro", "12/04/2025", "09:30").
+        Métodos: agendar_consulta(), cancelar_consulta(), confirmar_presenca().
+        Parâmetros: paciente, medico, data, hora.
