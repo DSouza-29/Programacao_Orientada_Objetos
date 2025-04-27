@@ -12,7 +12,7 @@ Nota: A placa do veículo deve ser gerada automaticamente no formato "ABC-1234".
 d) Exiba todas as informações do veículo e do proprietário, utilizando métodos de acesso."""
 
 from proprietario import Proprietario
-from veiculo import Veiculo
+from AT_06.veiculo import Veiculo
 
 proprietario1 = Proprietario()
 
