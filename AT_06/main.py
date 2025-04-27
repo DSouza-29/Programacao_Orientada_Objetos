@@ -13,3 +13,4 @@ Veiculo.mostrar_total_veiculos()
 
 preco = Veiculo.calcular_preco_aluguel(5, veiculo1.diaria)
 print(f"O preço total do aluguel é: R$ {preco:.2f}")
+

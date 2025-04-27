@@ -52,3 +52,4 @@ class Veiculo:
     def calcular_preco_aluguel(dias, diaria):
         """Calcula o preço do aluguel com base nos dias e valor da diária"""
         return dias * diaria
+
