@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-
 class Pessoa(ABC):
     def __init__(self, nome, cpf, data_nascimento):
         self.nome = nome
@@ -8,19 +7,18 @@ class Pessoa(ABC):
         self.data_nascimento = data_nascimento
 
     @abstractmethod
-    def exibir_dados(self):  # Método
+    def exibir_dados(self): 
         pass
 
-    def get_cpf(self):  # Getter para acessar o CPF fora da classe
+    def get_cpf(self):
         return self.__cpf
 
     @staticmethod
     def _validar_cpf(cpf):
-        # Validar o CPF ccom 11 dígitos
         return cpf.isdigit() and len(cpf) == 11
 
     @staticmethod
-    def _formatar_cpf(cpf):  # Remover caracteres não númericos e formatar CPF
+    def _formatar_cpf(cpf):
         cpf = ''.join(filter(str.isdigit, cpf))
         if Pessoa._validar_cpf(cpf):
             return f"{cpf[:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:]}"
@@ -28,7 +26,7 @@ class Pessoa(ABC):
             raise ValueError("CPF inválido")
 
 
-class Aluno(Pessoa):  # Classe Aluno que herda de pessoa
+class Aluno(Pessoa): 
     def __init__(self, nome, cpf, data_nascimento, matricula):
         super().__init__(nome, cpf, data_nascimento)
         self.__matricula = matricula
@@ -38,10 +36,10 @@ class Aluno(Pessoa):  # Classe Aluno que herda de pessoa
     def get_matricula(self):
         return self.__matricula
 
-    def adicionar_nota(self, nota):  # Adicionar notas a lista
+    def adicionar_nota(self, nota): 
         self.__notas.append(nota)
 
-    def adicionar_disciplina(self, disciplina):  # Adicionar disciplina ao aluno
+    def adicionar_disciplina(self, disciplina): 
         self.disciplinas.append(disciplina)
 
     def exibir_dados(self):
@@ -72,16 +70,16 @@ class Aluno(Pessoa):  # Classe Aluno que herda de pessoa
         self.notas_por_disciplina.setdefault(disciplina_nome, []).append(nota)
 
 
-class Professor(Pessoa):  # Clase Professor que herda de pessoa
+class Professor(Pessoa): 
     def __init__(self, nome, cpf, data_nascimento, siape):
         super().__init__(nome, cpf, data_nascimento)
         self.__siape = siape
         self.disciplinas = []
 
-    def get_siape(self):  # Método getter para siape
+    def get_siape(self): 
         return self.__siape
     
-    # Adicionar disciplina ao professor
+ 
     def adicionar_disciplina(self, disciplina):
             if disciplina not in self.disciplinas:
                 self.disciplinas.append(disciplina)

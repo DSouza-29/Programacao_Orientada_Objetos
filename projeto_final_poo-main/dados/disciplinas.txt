@@ -1,4 +1,4 @@
-MAT1|Matematica_1|Renata Lemos|Carlos Oliveira,Lucas Almeida,Juliana Martins,Thiago Lima,Roberta Gomes,Felipe Martins,Camila Santos
+MAT1|Matematica_1|Renata Lemos|Lucas Almeida,Juliana Martins,Thiago Lima,Roberta Gomes,Felipe Martins,Camila Santos,Carlos Oliveira
 LP|Logica_de_Programacao|Renata Lemos|Carlos Oliveira,Mariana Santos,Pedro Costa,Fernanda Lima,Lucas Almeida,Ricardo Souza,Amanda Rocha,Lucas Ferreira,Thiago Lima,Luana Ribeiro,Roberta Gomes,Vinícius Mendes
 PEST|Programacao_Estruturada|Renata Lemos|José Pereira,Pedro Costa,Amanda Rocha,Lucas Ferreira,Thiago Lima,Roberta Gomes
 BD|Banco_de_Dados|Ricardo Mendes|José Pereira,Lucas Almeida,Juliana Martins,Ricardo Souza,Lucas Ferreira,Felipe Martins,Camila Santos,Beatriz Oliveira

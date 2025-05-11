@@ -5,9 +5,9 @@ class Disciplina:
         self.professor_responsavel = professor_responsavel
         self.alunos_matriculados = []
 
-        professor_responsavel.adicionar_disciplina(self)  # Associa a disciplina ao professor
+        professor_responsavel.adicionar_disciplina(self) 
 
-    def adicionar_aluno(self, aluno):  # Adiciona um aluno à disciplina
+    def adicionar_aluno(self, aluno):
         if aluno not in self.alunos_matriculados:
                 self.alunos_matriculados.append(aluno)
 

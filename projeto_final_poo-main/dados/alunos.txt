@@ -1,4 +1,4 @@
-Carlos Oliveira|884.184.735-00|1995-08-09|SI20230001|Matematica_1,7.5,8.0,7.75|Logica_de_Programacao,8.0,9.0,8.5|Sistemas_de_Informacao,6.5,7.0,6.75
+Carlos Oliveira|884.184.735-00|1995-08-09|SI20230001|Logica_de_Programacao,8.0,9.0,8.5|Sistemas_de_Informacao,6.5,7.0,6.75
 Ana Beatriz Silva|861.970.760-00|1991-04-07|SI20230002|Redes_de_Computadores,7.0,6.5,6.75|Sistemas_de_Informacao,8.5,9.0,8.75|Ciencia_da_Computacao,6.0,6.5,6.25
 José Pereira|339.925.817-00|1990-11-11|SI20230003|Programacao_Estruturada,7.5,8.5,8.0|Banco_de_Dados,6.0,7.0,6.5|Engenharia_de_Software,8.0,7.5,7.75
 Mariana Santos|245.858.605-00|1992-11-17|SI20230004|Logica_de_Programacao,9.0,9.5,9.25|Algoritmos,8.5,8.0,8.25|Sistemas_de_Informacao,7.0,7.5,7.25
@@ -18,4 +18,5 @@ Camila Santos|850.929.469-00|1991-02-03|SI20230017|Matematica_1,5.5,6.0,5.75|Ban
 Beatriz Oliveira|683.913.241-00|1996-12-24|SI20230018|Banco_de_Dados,7.5,8.0,7.75|Engenharia_de_Software,8.5,8.0,8.25|Redes_de_Computadores,6.5,6.0,6.25|Programacao_Orientada_Objetos,9.0,8.5,8.75|Ciencia_da_Computacao,7.0,6.5,6.75
 Vinícius Mendes|622.531.543-00|1993-09-07|SI20230019|Logica_de_Programacao,6.5,7.0,6.75|Engenharia_de_Software,8.0,7.5,7.75
 Isabela Lima|767.284.743-00|1998-10-25|SI20230020|Redes_de_Computadores,7.5,8.0,7.75|Engenharia_de_Software,9.0,9.5,9.25
-aluno10|123.123.123-12|2001-08-29|123123123|aluno11|123.321.123-33|2001-08-28|123123332131|
+aluno10|123.123.123-12|2001-08-29|123123123|
+Carlos Oliveira|884.184.735-00|1995-08-09|SI20230001|Denner souza|020.333.232-32|2000-01-29|123321312|
