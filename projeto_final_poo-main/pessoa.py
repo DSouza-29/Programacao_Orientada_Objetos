@@ -45,7 +45,7 @@ class Aluno(Pessoa):  # Classe Aluno que herda de pessoa
         self.disciplinas.append(disciplina)
 
     def exibir_dados(self):
-        info = f"Aluno: {self.nome}, Matrícula: {self.__matricula}, Data Nasc.: {self.data_nascimento}"
+        info = f"Aluno: {self.nome}\n Matrícula: {self.__matricula}\n Data Nasc.: {self.data_nascimento}"
         info += f"\n  CPF: {self.get_cpf()}"
         if self.__notas:
             info += f"\n  Notas: {', '.join(map(str, self.__notas))}"

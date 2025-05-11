@@ -131,6 +131,29 @@ def inicializar_dados():
 
 
 #-------------------------------------------------------------
+# def atualizar_aluno(aluno):
+#     try:
+#         with open(arquivo_alunos, "w", encoding="utf-8") as arquivo:
+#             for a in alunos:
+#                 if a.get_cpf() == aluno.get_cpf():
+#                     dados_disciplinas = []
+#                     for d in a.disciplinas:
+#                         notas = a.notas_por_disciplina.get(d.nome, [])
+#                         linha_disc = f"{d.nome}," + ",".join(map(str, notas))
+#                         dados_disciplinas.append(linha_disc)
+#                     linha = f"{a.nome}|{a.get_cpf()}|{a.data_nascimento}|{a.get_matricula()}|{'|'.join(dados_disciplinas)}\n"
+#                     arquivo.write(linha)
+#                 else:
+#                     dados_disciplinas = []
+#                     for d in a.disciplinas:
+#                         notas = a.notas_por_disciplina.get(d.nome, [])
+#                         linha_disc = f"{d.nome}," + ",".join(map(str, notas))
+#                         dados_disciplinas.append(linha_disc)
+#                     linha = f"{a.nome}|{a.get_cpf()}|{a.data_nascimento}|{a.get_matricula()}|{'|'.join(dados_disciplinas)}\n"
+#                     arquivo.write(linha)
+#     finally:
+#         print(f"Dados de aluno {aluno.nome} atualizados.")
+
 def atualizar_aluno(aluno):
     try:
         with open(arquivo_alunos, "w", encoding="utf-8") as arquivo:
@@ -151,10 +174,9 @@ def atualizar_aluno(aluno):
                         dados_disciplinas.append(linha_disc)
                     linha = f"{a.nome}|{a.get_cpf()}|{a.data_nascimento}|{a.get_matricula()}|"
                     arquivo.write(linha)
+
     finally:
-        print(f"Dados de aluno {aluno.nome} atualizados.")
-
-
+              print(f"Dados de aluno {aluno.nome} atualizados.")
 def atualizar_disciplina(disc):
     try:
         with open(arquivo_disciplinas, "w", encoding="utf-8") as arquivo:

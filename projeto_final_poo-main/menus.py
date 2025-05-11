@@ -36,7 +36,8 @@ def main():
                         matricula = input('Matrícula do aluno: ')
                         aluno = Aluno(nome, cpf, datetime.datetime.strptime(nascimento, "%Y-%m-%d").date(), matricula)
                         salvar_aluno(aluno)
-                        print(f'✅ Aluno {nome} cadastrado com sucesso!')
+                        
+                        print(f'Aluno {nome} cadastrado com sucesso!')
                     except ValueError as e:
                         print(f'Erro ao cadastrar aluno: {e}')
 
@@ -47,19 +48,20 @@ def main():
                     
                     print("\nLista de Alunos:")
                     for aluno in alunos:
-                        print(aluno.exibir_dados())  # Supondo que a classe Aluno tenha um método exibir_dados()
+                        print(aluno.exibir_dados()) 
                         print("-" * 30)
 
                 elif escolha == '3':
                     matricula = input("Digite a matrícula do aluno que deseja buscar: ").strip()
                     for aluno in mapa_alunos.values():
                         if aluno.get_matricula() == matricula:
+                            print("-" * 30)
                             print("\nAluno encontrado:\n")
                             print(aluno.exibir_dados())
-                            return
+                            print("-" * 30)
+                            
                     print("\nAluno com matrícula", matricula, "não encontrado.")
-                    return None
-                
+                    
                 elif escolha == '4':
                     matricula = input("Digite a matrícula do aluno que deseja matricular: ").strip()
                     codigo_disciplina = input("Digite o código da disciplina: ").strip()
