@@ -21,10 +21,6 @@ def cadastrar_disciplina(codigo=0, nome="padrão", professor="padrão"):
     return disciplina
 
 
-#----------------------------------------------------
-
-
-
 def desmatricular_aluno(cpf, disciplina_nome):
     aluno = next((a for a in alunos if a.get_cpf() == cpf), None)
     if not aluno:
@@ -47,56 +43,25 @@ def desmatricular_aluno(cpf, disciplina_nome):
 
     print(f"Aluno {aluno.nome} desmatriculado da disciplina {disciplina_nome} com sucesso.")
 
-# def salvar_todos_alunos():
-#     # Atualiza todos os dados dos alunos no arquivo
-#     try:
-#         with open(arquivo_alunos, "w", encoding="utf-8") as arquivo:
-#             for aluno in alunos:
-#                 dados_disciplinas = []
-#                 for d in aluno.disciplinas:
-#                     notas = aluno.notas_por_disciplina.get(d.nome, [])
-#                     linha_disc = f"{d.nome}," + ",".join(map(str, notas))
-#                     dados_disciplinas.append(linha_disc)
-
-#                 # Monta a linha do aluno com os dados completos
-#                 linha = f"{aluno.nome}|{aluno.get_cpf()}|{aluno.data_nascimento}|{aluno.get_matricula()}\n"
-                
-#                 # Inclui as disciplinas se houver
-#                 if dados_disciplinas:
-#                     linha += "|".join(dados_disciplinas)
-                
-#                 # Adiciona a quebra de linha para separar os alunos
-#                 linha += "\n"
-                
-#                 # Escreve no arquivo
-#                 arquivo.write(linha)
-                
-#     finally:
-#         print("Todos os alunos foram salvos.")
-
-
 def salvar_todos_alunos():
     try:
         with open(arquivo_alunos, "w", encoding="utf-8") as arquivo:
             for aluno in alunos:
-                # Monta os dados básicos do aluno
+
                 linha = f"{aluno.nome}|{aluno.get_cpf()}|{aluno.data_nascimento}|{aluno.get_matricula()}|"
                 
-                # Inclui as disciplinas e notas
+
                 dados_disciplinas = []
                 for d in aluno.disciplinas:
                     notas = aluno.notas_por_disciplina.get(d.nome, [])
                     linha_disc = f"{d.nome}," + ",".join(map(str, notas))
                     dados_disciplinas.append(linha_disc)
                 
-                # Adiciona as disciplinas, se existirem
                 if dados_disciplinas:
                     linha += "|".join(dados_disciplinas)
-                
-                # Adiciona a quebra de linha para separar os alunos
+
                 linha += "\n"
-                
-                # Escreve no arquivo
+            
                 arquivo.write(linha)
                 
     finally:
@@ -113,13 +78,10 @@ def remover_disciplina_do_professor(professor_siape, codigo_disciplina):
         print(f"Disciplina com código {codigo_disciplina} não encontrada para o professor {professor.nome}.")
         return None
 
-    # Remove a disciplina da lista do professor
     professor.disciplinas.remove(disciplina)
 
-    # Remove o professor da disciplina
     disciplina.professor_responsavel = None
 
-    # Atualiza os dados do professor e da disciplina
     atualizar_professor(professor)
     atualizar_disciplina(disciplina)
 
